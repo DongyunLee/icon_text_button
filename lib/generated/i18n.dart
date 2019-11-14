@@ -29,7 +29,7 @@ class $en extends S {
 
 class $zh_CN extends S {
   const $zh_CN();
-  
+
   @override
   TextDirection get textDirection => TextDirection.ltr;
 
