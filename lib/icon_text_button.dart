@@ -16,46 +16,46 @@ enum BtnType { raise, outline, flat, icon }
 ///
 class IconTextButton extends StatefulWidget {
   final BtnType btnType;
-  
+
   ///
   /// The icon you want to display
   /// icon图标
   ///
   @required
   final Icon icon;
-  
+
   ///
   /// The text you will display under the icon
   /// 图标下的文字
   ///
   @required
   final Text label;
-  
+
   ///
   /// The size of whole button
   /// 大小
   ///
   final Double size;
-  
+
   ///
   /// The color of icon & text
   /// 颜色
   ///
   final Color color;
-  
+
   ///
   /// The color of Background
   /// 背景颜色
   ///
   final Color bgColor;
-  
+
   ///
   /// The event when you click our button
   /// 点击事件
   ///
   @required
   final Function onPress;
-  
+
   const IconTextButton({Key key,
     this.icon,
     this.label,
@@ -65,7 +65,7 @@ class IconTextButton extends StatefulWidget {
     this.btnType,
     this.onPress})
       : super(key: key);
-  
+
   @override
   State<StatefulWidget> createState() => _IconTextButtonState();
 }
@@ -93,7 +93,7 @@ class _IconTextButtonState extends State<IconTextButton> {
         ],
       ),
     );
-  
+
     ///
     /// The switcher of button type
     /// 按钮类型处理
