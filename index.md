@@ -1,7 +1,3 @@
-# IconTextButton
-
-A button Flutter Widget that contain Icon and Text together.
-
 ## Getting Started
 
 [To Read The Official Modules](https://pub.dev/packages/icon_text_button#-installing-tab-)
