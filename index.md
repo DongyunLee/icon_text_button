@@ -9,22 +9,22 @@ A button Flutter Widget that contain Icon and Text together.
 
 
 * in *pubspec.yaml* :
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-
-  \# Look here, you will get the IconTextButton support follows this:
-  icon_text_button: ^0.1.0
-
-```
+    
+    ```yaml
+    dependencies:
+      flutter:
+        sdk: flutter
+    
+      \# Look here, you will get the IconTextButton support follows this:
+      icon_text_button: ^0.1.0
+    
+    ```
 
 * and then, type follows in your terminal:
-
-```shell
-flutter pub get
-```
+    
+    ```shell
+    flutter pub get
+    ```
 
 2. import the `IconTextButton` in your widget
 
