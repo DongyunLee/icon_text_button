@@ -1,3 +1,5 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 2019/11/14
+init
 
-* TODO: Describe initial release.
+## [0.1.0] - 2019/11/14
+init pub package
