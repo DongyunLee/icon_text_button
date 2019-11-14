@@ -15,7 +15,7 @@ A button Flutter Widget that contain Icon and Text together.
       flutter:
         sdk: flutter
     
-      \# Look here, you will get the IconTextButton support follows this:
+      # Look here, you will get the IconTextButton support follows this:
       icon_text_button: ^0.1.0
     
     ```
