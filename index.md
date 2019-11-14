@@ -1,20 +1,21 @@
-# icon_text_button
+# IconTextButton
 
-A button Widget that contain Icon and Text together.
+A button Flutter Widget that contain Icon and Text together.
 
 ## Getting Started
 1. install the dependency
 
-[To Read The Official Modules](https://pub.dev/packages/icon_text_button#-installing-tab-)
+    [To Read The Official Modules](https://pub.dev/packages/icon_text_button#-installing-tab-)
 
 
 * in *pubspec.yaml* :
+
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
 
-  # Look here, you will get the IconTextButton support follows this:
+  \# Look here, you will get the IconTextButton support follows this:
   icon_text_button: ^0.1.0
 
 ```
@@ -30,6 +31,7 @@ flutter pub get
 ## Examples:
 
 ### A Sample 
+
 ```dart
 import 'package:flutter/material.dart';
 import 'package:icon_text_button/icon_text_button.dart';
