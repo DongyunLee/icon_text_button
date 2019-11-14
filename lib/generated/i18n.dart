@@ -28,10 +28,10 @@ class $en extends S {
 }
 
 class $zh_CN extends S {
-	const $zh_CN();
-	
-	@override
-	TextDirection get textDirection => TextDirection.ltr;
+  const $zh_CN();
+  
+  @override
+  TextDirection get textDirection => TextDirection.ltr;
 
 }
 
@@ -41,7 +41,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale("en", ""),
-	    Locale("zh", "CN"),
+      Locale("zh", "CN"),
     ];
   }
 
@@ -69,9 +69,9 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
         case "en":
           S.current = const $en();
           return SynchronousFuture<S>(S.current);
-	      case "zh_CN":
-		      S.current = const $zh_CN();
-		      return SynchronousFuture<S>(S.current);
+        case "zh_CN":
+          S.current = const $zh_CN();
+          return SynchronousFuture<S>(S.current);
         default:
           // NO-OP.
       }
