@@ -32,7 +32,7 @@ class $zh_CN extends S {
 	
 	@override
 	TextDirection get textDirection => TextDirection.ltr;
-	
+
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
