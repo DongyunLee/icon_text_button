@@ -1,16 +1,37 @@
 # example
 
-A new Flutter project.
+The example project of [IconTextButton](https://pub.dev/packages/icon_text_button)
 
-## Getting Started
+## Sample
 
-This project is a starting point for a Flutter application.
+```dart
+IconTextButton(
+    icon: Icon(Icons.school),
+    label: Text('RaiseButton'),
+    color: Colors.white,
+    onPress: () {},
+),// Widget RaiseButton
 
-A few resources to get you started if this is your first Flutter project:
+IconTextButton(
+    icon: Icon(Icons.all_inclusive),
+    label: Text('FlatButton'),
+    onPress: () {},
+    color: Colors.red,
+    btnType: BtnType.flat,
+),// Widget FlatButton
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+IconTextButton(
+    icon: Icon(Icons.ac_unit),
+    label: Text('OutlineButton'),
+    btnType: BtnType.outline,
+    color: Colors.cyan,
+    onPress: () {},
+),// Widget OutlineButton
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+IconTextButton(
+    icon: Icon(Icons.import_contacts),
+    label: Text('IconButton'),
+    btnType: BtnType.icon,
+    onPress: () {},
+)// Widget IconButton
+```

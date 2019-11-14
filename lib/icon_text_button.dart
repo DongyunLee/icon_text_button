@@ -15,6 +15,10 @@ enum BtnType { raise, outline, flat, icon }
 /// 图文按钮
 ///
 class IconTextButton extends StatefulWidget {
+	///
+	/// The button style that you will use
+	/// 你要使用的按钮组件样式
+	///
   final BtnType btnType;
 
   ///
