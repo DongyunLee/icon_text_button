@@ -30,6 +30,15 @@ A button Flutter Widget that contain Icon and Text together.
 
 ## Examples:
 
+
+More details you can find in [this page](https://pub.dev/packages/icon_text_button#-example-tab-),
+or see the code in the dictionary named `/example`.
+Join it, and run it!
+
+```sh
+cd example
+```
+
 ### A Sample 
 
 ```dart
@@ -113,15 +122,4 @@ class _HomePageState extends State<HomePage> {
 
 
 ```
-
-
-More details you can see the code in the dictionary named `/example`.
-Join it, and run it!
-
-```sh
-cd example
-```
-
-
-
 
