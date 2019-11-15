@@ -1,7 +1,5 @@
 library icon_text_button;
 
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 ///
@@ -25,22 +23,20 @@ class IconTextButton extends StatefulWidget {
   /// The icon you want to display
   /// icon图标
   ///
-  @required
   final Icon icon;
 
   ///
   /// The text you will display under the icon
   /// 图标下的文字
   ///
-  @required
-  final Text label;
-
+  final label;
+  
   ///
   /// The size of whole button
   /// 大小
   ///
-  final Double size;
-
+  final double size;
+  
   ///
   /// The color of icon & text
   /// 颜色
@@ -57,17 +53,19 @@ class IconTextButton extends StatefulWidget {
   /// The event when you click our button
   /// 点击事件
   ///
-  @required
   final VoidCallback onPress;
 
+  final Color borderColor;
+
   const IconTextButton({Key key,
-    this.icon,
-    this.label,
+	  @required this.icon,
+	  @required this.label,
     this.size,
     this.color,
     this.bgColor,
     this.btnType,
-    this.onPress})
+	  @required this.onPress,
+	  this.borderColor})
       : super(key: key);
 
   @override
@@ -104,28 +102,51 @@ class _IconTextButtonState extends State<IconTextButton> {
     ///
     switch (widget.btnType) {
       case BtnType.outline:
-        return OutlineButton(
-          child: wid,
-          textColor: widget.color,
-          onPressed: widget.onPress,
+	      return Ink(
+		      decoration: ShapeDecoration(
+			      color: widget.bgColor,
+			      shape: Border(),
+		      ),
+		      child: OutlineButton(
+			      child: wid,
+			      splashColor: widget.color,
+			      textColor: widget.color,
+			      borderSide: widget.borderColor != null
+					      ? BorderSide(color: widget.borderColor)
+					      : null,
+			      onPressed: widget.onPress,
+		      ),
         );
       case BtnType.flat:
         return FlatButton(
           child: wid,
           textColor: widget.color,
+	        splashColor: widget.color,
+	        color: widget.bgColor,
           onPressed: widget.onPress,
         );
       case BtnType.icon:
-        return IconButton(
-          icon: widget.icon,
-          color: widget.color,
-          tooltip: widget.label.toString(),
-          onPressed: widget.onPress,
+	      return Container(
+		      child: Ink(
+			      decoration: ShapeDecoration(
+				      color: widget.bgColor,
+				      shape: Border(),
+			      ),
+			      child: IconButton(
+				      icon: widget.icon,
+				      color: widget.color,
+				      splashColor: widget.color,
+				      tooltip: widget.label.data,
+				      onPressed: widget.onPress,
+			      ),
+		      ),
         );
       default:
         return RaisedButton(
           child: wid,
           textColor: widget.color,
+	        splashColor: widget.color,
+	        color: widget.bgColor,
           onPressed: widget.onPress,
         );
     }

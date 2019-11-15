@@ -1,3 +1,10 @@
+##[0.1.4] - 2019/11/15
+* update api:
+    * bgColor
+* add api:
+    * borderColor 
+        for btnType:  out_line 
+
 ## [0.1.3] - 2019/11/15
 * update example
 * update readme
