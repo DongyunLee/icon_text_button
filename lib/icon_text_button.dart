@@ -58,7 +58,7 @@ class IconTextButton extends StatefulWidget {
   /// 点击事件
   ///
   @required
-  final Function onPress;
+  final VoidCallback onPress;
 
   const IconTextButton({Key key,
     this.icon,

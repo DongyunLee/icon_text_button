@@ -16,7 +16,7 @@ A button Widget that contain Icon and Text together.
 | --------   | -----   | ----- | ----| --------   |
 | icon|Icon|required| The main icon ||
 | label|Text|required|The word under icon||
-| onPress |Funciton|required|The event when you click||
+| onPress |VoidCallback|required|The event when you click||
 | btnType |BtnType(enum)||The button style that you will use|The value is in \[raise, outline, flat, icon\]|
 | color |Color||The color of icon & text||
 | size |Double||The size of whole button||
