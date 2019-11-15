@@ -13,10 +13,10 @@ enum BtnType { raise, outline, flat, icon }
 /// 图文按钮
 ///
 class IconTextButton extends StatefulWidget {
-	///
-	/// The button style that you will use
-	/// 你要使用的按钮组件样式
-	///
+  ///
+  /// The button style that you will use
+  /// 你要使用的按钮组件样式
+  ///
   final BtnType btnType;
 
   ///
@@ -57,15 +57,16 @@ class IconTextButton extends StatefulWidget {
 
   final Color borderColor;
 
-  const IconTextButton({Key key,
-	  @required this.icon,
-	  @required this.label,
-	  this.size,
-	  this.color,
-	  this.bgColor,
-	  this.btnType,
-	  @required this.onPress,
-	  this.borderColor})
+  const IconTextButton(
+      {Key key,
+      @required this.icon,
+      @required this.label,
+      this.size,
+      this.color,
+      this.bgColor,
+      this.btnType,
+      @required this.onPress,
+      this.borderColor})
       : super(key: key);
 
   @override
@@ -102,51 +103,51 @@ class _IconTextButtonState extends State<IconTextButton> {
     ///
     switch (widget.btnType) {
       case BtnType.outline:
-	      return Ink(
-		      decoration: ShapeDecoration(
-			      color: widget.bgColor,
-			      shape: Border(),
-		      ),
-		      child: OutlineButton(
-			      child: wid,
-			      splashColor: widget.color,
-			      textColor: widget.color,
-			      borderSide: widget.borderColor != null
-					      ? BorderSide(color: widget.borderColor)
-					      : null,
-			      onPressed: widget.onPress,
-		      ),
+        return Ink(
+          decoration: ShapeDecoration(
+            color: widget.bgColor,
+            shape: Border(),
+          ),
+          child: OutlineButton(
+            child: wid,
+            splashColor: widget.color,
+            textColor: widget.color,
+            borderSide: widget.borderColor != null
+                ? BorderSide(color: widget.borderColor)
+                : null,
+            onPressed: widget.onPress,
+          ),
         );
       case BtnType.flat:
         return FlatButton(
           child: wid,
           textColor: widget.color,
-	        splashColor: widget.color,
-	        color: widget.bgColor,
+          splashColor: widget.color,
+          color: widget.bgColor,
           onPressed: widget.onPress,
         );
       case BtnType.icon:
-	      return Container(
-		      child: Ink(
-			      decoration: ShapeDecoration(
-				      color: widget.bgColor,
-				      shape: Border(),
-			      ),
-			      child: IconButton(
-				      icon: widget.icon,
-				      color: widget.color,
-				      splashColor: widget.color,
-				      tooltip: widget.label.data,
-				      onPressed: widget.onPress,
-			      ),
-		      ),
+        return Container(
+          child: Ink(
+            decoration: ShapeDecoration(
+              color: widget.bgColor,
+              shape: Border(),
+            ),
+            child: IconButton(
+              icon: widget.icon,
+              color: widget.color,
+              splashColor: widget.color,
+              tooltip: widget.label.data,
+              onPressed: widget.onPress,
+            ),
+          ),
         );
       default:
         return RaisedButton(
           child: wid,
           textColor: widget.color,
-	        splashColor: widget.color,
-	        color: widget.bgColor,
+          splashColor: widget.color,
+          color: widget.bgColor,
           onPressed: widget.onPress,
         );
     }
