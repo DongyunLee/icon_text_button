@@ -29,14 +29,14 @@ class IconTextButton extends StatefulWidget {
   /// The text you will display under the icon
   /// 图标下的文字
   ///
-  final label;
-  
+  final Text label;
+
   ///
   /// The size of whole button
   /// 大小
   ///
   final double size;
-  
+
   ///
   /// The color of icon & text
   /// 颜色
@@ -60,10 +60,10 @@ class IconTextButton extends StatefulWidget {
   const IconTextButton({Key key,
 	  @required this.icon,
 	  @required this.label,
-    this.size,
-    this.color,
-    this.bgColor,
-    this.btnType,
+	  this.size,
+	  this.color,
+	  this.bgColor,
+	  this.btnType,
 	  @required this.onPress,
 	  this.borderColor})
       : super(key: key);

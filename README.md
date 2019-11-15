@@ -21,4 +21,5 @@ A button Widget that contain Icon and Text together.
 | color |Color||The color of icon & text||
 | size |Double||The size of whole button||
 | bgColor |Color||The color of Background||
+| borderColor | Color | | The color of border with outlineButton | ONLY FOR OutlineButton
 
