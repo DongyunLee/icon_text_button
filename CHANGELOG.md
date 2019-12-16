@@ -1,3 +1,7 @@
+## [0.1.7] - 2019/12/16
+* fix bug
+    * the assert of padding is opposite 
+
 ## [0.1.6] - 2019/12/16
 * add api:
     * padding

@@ -1,6 +1,6 @@
 name: icon_text_button
 description: A button Widget with Icon and Text together.Write with pure Dart, so you can use it cross Android and iOS.
-version: 0.1.6
+version: 0.1.7
 homepage: https://github.com/DongyunLee/icon_text_button
 
 environment:

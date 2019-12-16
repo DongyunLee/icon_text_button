@@ -100,7 +100,7 @@ class _IconTextButtonState extends State<IconTextButton> {
 		/// 按钮的内部实现
 		///
 		var wid = Padding(
-			padding: widget.padding == null
+			padding: widget.padding != null
 					? widget.padding
 					: new EdgeInsets.fromLTRB(10.0, 30.0, 10.0, 30.0),
 			child: Column(
