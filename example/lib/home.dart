@@ -1,5 +1,5 @@
-import 'package:example/icon_text_button.dart';
 import 'package:flutter/material.dart';
+import 'package:icon_text_button/icon_text_button.dart';
 
 //import 'package';
 class HomePage extends StatefulWidget {

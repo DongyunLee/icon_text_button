@@ -20,6 +20,7 @@ A button Widget that contain Icon and Text together.
 | btnType |BtnType(enum)||The button style that you will use|The value is in \[raise, outline, flat, icon\]|
 | color |Color||The color of icon & text||
 | size |Double||The size of whole button||
+| padding | EdgeInsetsGeometry || The Padding around icon & text || 
 | bgColor |Color||The color of Background||
 | borderColor | Color | | The color of border with outlineButton | ONLY FOR OutlineButton
 

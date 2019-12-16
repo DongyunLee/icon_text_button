@@ -1,3 +1,7 @@
+## [0.1.6] - 2019/12/16
+* add api:
+    * padding
+
 ## [0.1.5] - 2019/11/15
 * update document
 

@@ -22,7 +22,7 @@ dependencies:
 
 
   # Look here, you will get the IconTextButton support follows this:
-  icon_text_button: ^0.1.0
+  icon_text_button: ^0.1.5
 
 
   # The following adds the Cupertino Icons font to your application.
